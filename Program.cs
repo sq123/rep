@@ -108,6 +108,11 @@ namespace обучалка
             Console.WriteLine("Отключение двигателя.");
         }
     }
+    static class r
+    {
+        public airport w = new airport();
+
+    }
     class Program  //базовый класс
     {      
         
@@ -131,28 +136,28 @@ namespace обучалка
         {
             //airport plane = new airport(n);
         }
-        static void center()
+        void center()
         {
+
+            q.startengine();////////////////////////////////++++++++++++++++++++++++++++++++
             int command = Convert.ToInt32(Console.ReadLine());
 
-            switch (command)
+            //switch (command)
             {
-                case 1:
-                    
-                    
-
+                //case 1:
+                   // Program.
+                  //
             }
         }
-
+        public airport q = new airport();////////////////////////+++++++++++++++++++++++++++++++
+        
         static void Main(string[] args) //точка входа в программу
         {
             Console.WriteLine("Введите количество летательных средств:");
             int kol_planes = Convert.ToInt32(Console.ReadLine());
             StartProgramm(kol_planes);      //вызов метода стартпрограмм с передачей количества самолётов
 
-
-            airport p = new airport();
-            p.startengine();
+            
 
 
             
